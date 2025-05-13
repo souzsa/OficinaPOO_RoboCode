@@ -1,0 +1,37 @@
+/*
+- Fernanda G. F. de Souza
+- Atividade 03
+- Vowel Count
+- 08/05/2025
+*/
+
+public class Vowels {
+
+  
+  public static int getCount(String str) {
+     if (str.length() == 0) return 0; // Evita o erro
+      int quantidadeVogais = 0;
+      int i = 0;
+    do {
+      char ch = str.charAt(i);
+      if (ch == 'a'){
+        quantidadeVogais++;
+       }
+      if (ch == 'e'){
+        quantidadeVogais++;
+      }
+      if (ch == 'i'){
+        quantidadeVogais++;
+      }
+      if (ch == 'o'){
+        quantidadeVogais++;
+      }
+      if (ch == 'u'){
+        quantidadeVogais++;
+     }
+     i++;
+    } while (i < str.length());  
+
+      return quantidadeVogais;
+  }
+}
