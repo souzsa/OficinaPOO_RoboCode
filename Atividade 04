@@ -1,0 +1,48 @@
+/*
+- Fernanda G. F. de Souza
+- Atividade 04
+- Basic Mathematical Operations
+- 13/05/2025
+*/
+
+public class BasicOperations {
+  public static Integer basicMath(String op, int v1, int v2) {
+    calculadora calc = new calculadora();
+
+    switch (op) {
+      case "+":
+        return calc.soma(v1, v2);
+      case "-":
+        return calc.subtracao(v1, v2);
+      case "*":
+        return calc.multi(v1, v2);
+      case "/":
+        if (v2 == 0) {
+          System.out.println("Erro: Divisão por zero.");
+          return null;
+        }
+        return calc.dividir(v1, v2);
+      default:
+        System.out.println("Erro: Operador inválido.");
+        return null;
+    }
+  }
+}
+
+class calculadora {
+  int soma(int n1, int n2) {
+    return n1 + n2;
+  }
+
+  int subtracao(int n1, int n2) {
+    return n1 - n2;
+  }
+
+  int multi(int n1, int n2) {
+    return n1 * n2;
+  }
+
+  int dividir(int n1, int n2) {
+    return n1 / n2; // Divisão inteira
+  }
+}
