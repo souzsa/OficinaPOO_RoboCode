@@ -1,5 +1,8 @@
 /* 
-
+- Fernanda G. F. de Souza
+- Atividade 07
+- BotBarata
+- 22/05/2025
 */
 package javarico;
 import robocode.*;
