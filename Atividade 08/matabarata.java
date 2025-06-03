@@ -1,3 +1,9 @@
+/* 
+- Fernanda G. F. de Souza
+- Atividade 08
+- BotMataBarata
+- 27/05/2025
+*/
 package mataBarata;
 import robocode.*;
 
